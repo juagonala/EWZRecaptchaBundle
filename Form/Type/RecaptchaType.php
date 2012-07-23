@@ -89,6 +89,7 @@ class RecaptchaType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
+            'compound'      => false,
             'public_key'    => null,
             'url_challenge' => null,
             'url_noscript'  => null,
